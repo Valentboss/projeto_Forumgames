@@ -1,0 +1,17 @@
+#container, img{
+    background-image: none;
+}
+
+#header{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+#body-page{
+    background-color: aquamarine;
+}
