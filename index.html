@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foro Gamer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
     <div id="container">
@@ -14,8 +14,9 @@
         </div>
 
         <nav id="menu">
-            <a href="#">Início</a>
-            <a href="#">Games</a>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Games</a>
+            <a href="sobre.html">Sobre</a>
         </nav>
 
         <div id="bodypage">
@@ -38,13 +39,15 @@
 
                     </div>
 
-                    <div id="comentarios">
+                    <div id="comentarios-p1">
                         <h4 id="contador">Comentários (0):</h4>
                     </div>
 
+                    <div id="comentariosjs">
                         <input type="text" id="input-comentario" placeholder="Escreva um comentário">
                         <button onclick="agregarComentario()">Enviar</button>
-                        
+                    </div>    
+                    
                     <script>
                         let contador = 0
                         function agregarComentario(){
@@ -102,9 +105,9 @@
                     Página criado para fins educativos</p>
                 </div>
                 <div id="footer-right">
-                    <a href="#">Início</a>
-                    <a href="#">Games</a>
-                    <a href="#">Contato</a>
+                    <a href="index.html">Início</a>
+                    <a href="catalogo.html">Games</a>
+                    <a href="sobre.html">Contato</a>
                 </div>
             </div>
         </div>
