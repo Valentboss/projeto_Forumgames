@@ -45,40 +45,135 @@
                         </div>
 
                     </div>
+
                     <div id="comentarioscss">
-                    <div id="comentarios-p1">
-                        <h4 id="contador">Comentários (0):</h4>
-                    </div>
-
-                        
+                        <div id="comentarios-p1">
+                          <h4 id="contador">Comentários (0):</h4>
+                        </div>                     
                     
-                    <script>
-                        let contador = 0
-                        function agregarComentario(){
-                            const input = document.getElementById("input-comentario");
-                            const texto = input.value;
+                        <script>
+                            let contador = 0
+                            function agregarComentario(){
+                                const input = document.getElementById("input-comentario");
+                                const texto = input.value;
 
-                            if (texto===""){
-                                return;
+                                if (texto===""){
+                                    return;
+                                }
+
+                                const nuevoComentario = document.createElement("p")
+                                nuevoComentario.textContent = "Usuario: " + texto;
+
+                                const contenedor = document.getElementById("comentarioscss")
+                                contenedor.appendChild(nuevoComentario);
+
+                                contador++;
+                                document.getElementById("contador").textContent = "Comentários (" + contador + "):";
+
+                                input.value = "";
                             }
-
-                            const nuevoComentario = document.createElement("p")
-                            nuevoComentario.textContent = "Usuario: " + texto;
-
-                            const contenedor = document.getElementById("comentarioscss")
-                            contenedor.appendChild(nuevoComentario);
-
-                            contador++;
-                            document.getElementById("contador").textContent = "Comentários (" + contador + "):";
-
-                            input.value = "";
-                        }
-                    </script>
+                        </script>
                     </div>
+
                     <div id="comentariosjs">
                         <input type="text" id="input-comentario" placeholder="Escreva um comentário">
                         <button onclick="agregarComentario()">Enviar</button>
                     </div>
+
+                    <div id="post2">
+
+                        <div id="post2img">
+                            <img src="imagens/post2.jpeg">
+                        </div>
+
+                        <div id="post2text">
+                            <h3>Minecraft agora é facil demais?</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam provident maiores iusto, omnis ullam ut accusamus possimus nemo, eaque molestias. Recusandae odio molestias quas esse tempora ex estLorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum incidunt, quasi tempore dolor quos excepturi aspernatur laborum veniam repellendus voluptas, atque quas consequuntur minus possimus a vitae qui distinctio fugiat.</p><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odit voluptas vero officiis, aperiam distinctio sunt eum commodi modi, nobis facilis sint fuga excepturi iusto dolores soluta vitae, fugiat optio?</p><br>                        
+                        </div>
+                    </div>
+
+                        <div id="comentarioscss">
+                            <div id="comentarios-p1">
+                              <h4 id="contador">Comentários (0):</h4>
+                            </div>                     
+                        
+                            <script>
+                                let contador2 = 0
+                                function agregarComentario(){
+                                    const input = document.getElementById("input-comentario");
+                                    const texto = input.value;
+    
+                                    if (texto===""){
+                                        return;
+                                    }
+    
+                                    const nuevoComentario = document.createElement("p")
+                                    nuevoComentario.textContent = "Usuario: " + texto;
+    
+                                    const contenedor = document.getElementById("comentarioscss")
+                                    contenedor.appendChild(nuevoComentario);
+    
+                                    contador2++;
+                                    document.getElementById("contador").textContent = "Comentários (" + contador + "):";
+    
+                                    input.value = "";
+                                }
+                            </script>
+                        </div>
+    
+                        <div id="comentariosjs">
+                            <input type="text" id="input-comentario" placeholder="Escreva um comentário">
+                            <button onclick="agregarComentario()">Enviar</button>
+                        </div>
+
+                        <div id="post3">
+
+                            <div id="post3img">
+                                <img src="imagens/post3.jfif">
+                            </div>
+    
+                            <div id="post3text">
+                                <h3>Bedrock vs java: Qual é melhor?</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam provident maiores iusto, omnis ullam ut accusamus possimus nemo, eaque molestias. Recusandae odio molestias quas esse tempora ex estLorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum incidunt, quasi tempore dolor quos excepturi aspernatur laborum veniam repellendus voluptas, atque quas consequuntur minus possimus a vitae qui distinctio fugiat.</p><br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odit voluptas vero officiis, aperiam distinctio sunt eum commodi modi, nobis facilis sint fuga excepturi iusto dolores soluta vitae, fugiat optio?</p><br>                        
+                            </div>
+                        </div>
+
+                        <div id="comentarioscss">
+                            <div id="comentarios-p1">
+                              <h4 id="contador">Comentários (0):</h4>
+                            </div>                     
+                        
+                            <script>
+                                let contador3 = 0
+                                function agregarComentario(){
+                                    const input = document.getElementById("input-comentario");
+                                    const texto = input.value;
+    
+                                    if (texto===""){
+                                        return;
+                                    }
+    
+                                    const nuevoComentario = document.createElement("p")
+                                    nuevoComentario.textContent = "Usuario: " + texto;
+    
+                                    const contenedor = document.getElementById("comentarioscss")
+                                    contenedor.appendChild(nuevoComentario);
+    
+                                    contador3++;
+                                    document.getElementById("contador").textContent = "Comentários (" + contador + "):";
+    
+                                    input.value = "";
+                                }
+                            </script>
+                        </div>
+    
+                        <div id="comentariosjs">
+                            <input type="text" id="input-comentario" placeholder="Escreva um comentário">
+                            <button onclick="agregarComentario()">Enviar</button>
+                        </div>
+
                 </div>   
 
                 <div id="contenido-right">

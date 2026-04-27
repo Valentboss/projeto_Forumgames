@@ -161,11 +161,11 @@ nav{
 }
 
 #comentarios-p1 h4{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #comentarios-p1 h5{
-    font-size: 20px;
+    font-size: 15px;
     color: red;
 }
 
@@ -176,6 +176,7 @@ nav{
     background-color: #1e293b;
     border-radius: 20px;
     color: white;
+    margin-bottom: 30px;
 }
 
 #comentariosjs input{
@@ -199,6 +200,50 @@ nav{
 #comentariosjs button:hover{
     background-color: #ef4444;
     transform: scale(1.1);
+}
+
+#post2{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #334155;
+    margin-top: 10px;
+    border-top:solid 1px #334155;
+    padding-top: 20px;
+}
+
+#post2text{
+    color: white;
+    font-family:sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+#post2text p{
+    font-size: 15px;
+}
+
+#post3{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #334155;
+    margin-top: 10px;
+    border-top:solid 1px #334155;
+    padding-top: 20px;
+}
+
+#post3text{
+    color: white;
+    font-family:sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+#post3text p{
+    font-size: 15px;
 }
 
 #contenido-right{

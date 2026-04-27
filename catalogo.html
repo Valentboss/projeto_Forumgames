@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
 </head>
+
 <body>
+
     <div id="container">
         <div id="header">
             <div id="title">
@@ -32,52 +35,6 @@
 
                 <div id="contenido-left">
 
-                    <div id="post1">
-
-                        <div id="post1img">
-                            <img src="imagens/8a8ab42e93738010d9c6af363bc7446a.jpg">
-                        </div>
-
-                        <div id="post1text">
-                            <h3>Farei uma seção de jogos</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam provident maiores iusto, omnis ullam ut accusamus possimus nemo, eaque molestias. Recusandae odio molestias quas esse tempora ex estLorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum incidunt, quasi tempore dolor quos excepturi aspernatur laborum veniam repellendus voluptas, atque quas consequuntur minus possimus a vitae qui distinctio fugiat.</p><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odit voluptas vero officiis, aperiam distinctio sunt eum commodi modi, nobis facilis sint fuga excepturi iusto dolores soluta vitae, fugiat optio?</p><br>                        
-                        </div>
-
-                    </div>
-                    <div id="comentarioscss">
-                    <div id="comentarios-p1">
-                        <h4 id="contador">Comentários (0):</h4>
-                    </div>
-
-                    <div id="comentariosjs">
-                        <input type="text" id="input-comentario" placeholder="Escreva um comentário">
-                        <button onclick="agregarComentario()">Enviar</button>
-                    </div>    
-                    
-                    <script>
-                        let contador = 0
-                        function agregarComentario(){
-                            const input = document.getElementById("input-comentario");
-                            const texto = input.value;
-
-                            if (texto===""){
-                                return;
-                            }
-
-                            const nuevoComentario = document.createElement("p")
-                            nuevoComentario.textContent = "Usuario: " + texto;
-
-                            const contenedor = document.getElementById("comentarioscss")
-                            contenedor.appendChild(nuevoComentario);
-
-                            contador++;
-                            document.getElementById("contador").textContent = "Comentários (" + contador + "):";
-
-                            input.value = "";
-                        }
-                    </script>
-                    </div>
                 </div>   
 
                 <div id="contenido-right">
