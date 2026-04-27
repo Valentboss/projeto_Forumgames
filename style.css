@@ -188,7 +188,7 @@ nav{
 }
 
 #comentariosjs button{
-    background-color: #ef4444;
+    background-color: white;
     border-radius: 20px;
     height: 30px;
     width: 80px;
@@ -197,6 +197,7 @@ nav{
 }
 
 #comentariosjs button:hover{
+    background-color: #ef4444;
     transform: scale(1.1);
 }
 
