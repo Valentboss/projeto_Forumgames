@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foro Gamer</title>
+    <title>GameNexus</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
     <div id="container">
         <div id="header">
-            <h1>Foro Gamer</h1>
+            <div id="title">
+                <img src="imagens/logo.png">
+            </div>
+            <div id="searchbox">
+                <input type="text" placeholder="Buscar un juego">
+            </div>
         </div>
 
         <nav id="menu">
-            <a href="index.html">Início</a>
-            <a href="catalogo.html">Games</a>
-            <a href="sobre.html">Sobre</a>
+            <div id="navi">
+                <a href="index.html">Início</a>
+                <a href="catalogo.html">Games</a>
+                <a href="sobre.html">Sobre</a>
+            </div>
         </nav>
 
         <div id="bodypage">
@@ -32,20 +39,22 @@
                         </div>
 
                         <div id="post1text">
-                            <h3>Minecraft está morrendo?</h3>
-                                <p>Testando aqui</p>
-                                <p>Oq ta acontecendo</p><br>
+                            <h3>Farei uma seção de jogos</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam provident maiores iusto, omnis ullam ut accusamus possimus nemo, eaque molestias. Recusandae odio molestias quas esse tempora ex estLorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum incidunt, quasi tempore dolor quos excepturi aspernatur laborum veniam repellendus voluptas, atque quas consequuntur minus possimus a vitae qui distinctio fugiat.</p><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odit voluptas vero officiis, aperiam distinctio sunt eum commodi modi, nobis facilis sint fuga excepturi iusto dolores soluta vitae, fugiat optio?</p><br>                        
                         </div>
 
                     </div>
-
-                    <div id="comentarios">
+                    <div id="comentarioscss">
+                    <div id="comentarios-p1">
                         <h4 id="contador">Comentários (0):</h4>
                     </div>
 
+                    <div id="comentariosjs">
                         <input type="text" id="input-comentario" placeholder="Escreva um comentário">
                         <button onclick="agregarComentario()">Enviar</button>
-                        
+                    </div>    
+                    
                     <script>
                         let contador = 0
                         function agregarComentario(){
@@ -59,7 +68,7 @@
                             const nuevoComentario = document.createElement("p")
                             nuevoComentario.textContent = "Usuario: " + texto;
 
-                            const contenedor = document.getElementById("comentarios")
+                            const contenedor = document.getElementById("comentarioscss")
                             contenedor.appendChild(nuevoComentario);
 
                             contador++;
@@ -68,6 +77,7 @@
                             input.value = "";
                         }
                     </script>
+                    </div>
                 </div>   
 
                 <div id="contenido-right">
