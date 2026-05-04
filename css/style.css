@@ -132,8 +132,8 @@ nav{
     height: 200px;
 }
 
-#post1, #post2, #post3 {
-  scroll-margin-top: 80px; 
+#post1, #post2, #post3, #post4, #post5, #post6, #post7 {
+  scroll-margin-top: 80px;
 }
 
 #post1{
@@ -202,6 +202,46 @@ nav{
     margin-bottom: 30px;
 }
 
+#comentariosjs4{
+    margin-top: 10px;
+    border-bottom: solid 1px white;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 20px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+#comentariosjs5{
+    margin-top: 10px;
+    border-bottom: solid 1px white;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 20px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+#comentariosjs6{
+    margin-top: 10px;
+    border-bottom: solid 1px white;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 20px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+#comentariosjs7{
+    margin-top: 10px;
+    border-bottom: solid 1px white;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 20px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
 #comentariosjs input{
     background: transparent;
     border: none;
@@ -221,6 +261,42 @@ nav{
 }
 
 #comentariosjs3 input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 87%;
+    padding: 5px;
+    color: black;
+}
+
+#comentariosjs4 input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 87%;
+    padding: 5px;
+    color: black;
+}
+
+#comentariosjs5 input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 87%;
+    padding: 5px;
+    color: black;
+}
+
+#comentariosjs6 input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 87%;
+    padding: 5px;
+    color: black;
+}
+
+#comentariosjs7 input{
     background: transparent;
     border: none;
     outline: none;
@@ -256,6 +332,43 @@ nav{
     cursor: pointer;
 }
 
+#comentariosjs4 button{
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#comentariosjs5 button{
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#comentariosjs6 button{
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#comentariosjs7 button{
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+
 #comentariosjs button:hover{
     background-color: #ef4444;
     transform: scale(1.1);
@@ -267,6 +380,26 @@ nav{
 }
 
 #comentariosjs3 button:hover{
+    background-color: #ef4444;
+    transform: scale(1.1);
+}
+
+#comentariosjs4 button:hover{
+    background-color: #ef4444;
+    transform: scale(1.1);
+}
+
+#comentariosjs5 button:hover{
+    background-color: #ef4444;
+    transform: scale(1.1);
+}
+
+#comentariosjs6 button:hover{
+    background-color: #ef4444;
+    transform: scale(1.1);
+}
+
+#comentariosjs7 button:hover{
     background-color: #ef4444;
     transform: scale(1.1);
 }
@@ -312,6 +445,94 @@ nav{
 }
 
 #post3text p{
+    font-size: 15px;
+}
+
+#post4{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #334155;
+    margin-top: 10px;
+    border-top:solid 1px #334155;
+    padding-top: 20px;
+}
+
+#post4text{
+    color: white;
+    font-family:sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+#post4text p{
+    font-size: 15px;
+}
+
+#post5{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #334155;
+    margin-top: 10px;
+    border-top:solid 1px #334155;
+    padding-top: 20px;
+}
+
+#post5text{
+    color: white;
+    font-family:sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+#post5text p{
+    font-size: 15px;
+}
+
+#post6{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #334155;
+    margin-top: 10px;
+    border-top:solid 1px #334155;
+    padding-top: 20px;
+}
+
+#post6text{
+    color: white;
+    font-family:sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+#post6text p{
+    font-size: 15px;
+}
+
+#post7{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #334155;
+    margin-top: 10px;
+    border-top:solid 1px #334155;
+    padding-top: 20px;
+}
+
+#post7text{
+    color: white;
+    font-family:sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+#post7text p{
     font-size: 15px;
 }
 

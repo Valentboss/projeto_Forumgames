@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
 </head>
+
 <body>
     <div id="container">
         <div id="header">
@@ -40,23 +42,30 @@
 
                         <div id="post1text">
                             <h3>Minecraft está morrendo?</h3>
-                            <p>Minecraft está morrendo?” é uma pergunta comum, mas os dados mostram o contrário. O jogo continua sendo um dos mais populares do mundo, com mais de 140 milhões de jogadores ativos mensais e mais de 350 milhões de cópias vendidas até recentemente . Além disso, ele segue recebendo atualizações constantes e mudanças importantes, como as novidades planejadas para 2026, que indicam uma evolução contínua do jogo e não um declínio . O que acontece é que a percepção de que “está morrendo” geralmente vem de jogadores antigos que já exploraram tudo ou perderam o interesse, enquanto novas gerações continuam entrando e mantendo a comunidade ativa.</p><br>
+                            <p>Minecraft está morrendo?” é uma pergunta comum, mas os dados mostram o contrário. O jogo
+                                continua sendo um dos mais populares do mundo, com mais de 140 milhões de jogadores
+                                ativos mensais e mais de 350 milhões de cópias vendidas até recentemente . Além disso,
+                                ele segue recebendo atualizações constantes e mudanças importantes, como as novidades
+                                planejadas para 2026, que indicam uma evolução contínua do jogo e não um declínio . O
+                                que acontece é que a percepção de que “está morrendo” geralmente vem de jogadores
+                                antigos que já exploraram tudo ou perderam o interesse, enquanto novas gerações
+                                continuam entrando e mantendo a comunidade ativa.</p><br>
                         </div>
 
                     </div>
 
                     <div id="comentarioscss">
                         <div id="comentarios-p1">
-                          <h4 id="contador">Comentários (0):</h4>
-                        </div>                     
-                    
+                            <h4 id="contador">Comentários (0):</h4>
+                        </div>
+
                         <script>
                             let contador = 0
-                            function agregarComentario(){
+                            function agregarComentario() {
                                 const input = document.getElementById("input-comentario");
                                 const texto = input.value;
 
-                                if (texto===""){
+                                if (texto === "") {
                                     return;
                                 }
 
@@ -87,91 +96,300 @@
 
                         <div id="post2text">
                             <h3>Minecraft agora é facil demais?</h3>
-                            <p>Muitos jogadores afirmam que o Minecraft se tornou fácil demais com o passar do tempo, principalmente por causa das atualizações que adicionaram novos recursos, itens e mecânicas que facilitam a sobrevivência. Hoje, é possível obter comida, abrigo e equipamentos com muito mais rapidez do que nas versões antigas, reduzindo o nível de desafio para alguns veteranos. Por outro lado, há quem defenda que o jogo não ficou mais fácil, apenas mais acessível e diversificado, permitindo que cada jogador escolha seu próprio nível de dificuldade e estilo de jogo.</p><br>
+                            <p>Muitos jogadores afirmam que o Minecraft se tornou fácil demais com o passar do tempo,
+                                principalmente por causa das atualizações que adicionaram novos recursos, itens e
+                                mecânicas que facilitam a sobrevivência. Hoje, é possível obter comida, abrigo e
+                                equipamentos com muito mais rapidez do que nas versões antigas, reduzindo o nível de
+                                desafio para alguns veteranos. Por outro lado, há quem defenda que o jogo não ficou mais
+                                fácil, apenas mais acessível e diversificado, permitindo que cada jogador escolha seu
+                                próprio nível de dificuldade e estilo de jogo.</p><br>
                         </div>
                     </div>
 
-                        <div id="comentarioscss2">
-                            <div id="comentarios-p1">
-                              <h4 id="contador2">Comentários (0):</h4>
-                            </div>                     
-                        
-                            <script>
-                                let contador2 = 0
-                                function agregarComentario2(){
-                                    const input = document.getElementById("input-comentario2");
-                                    const texto = input.value;
-    
-                                    if (texto===""){
-                                        return;
-                                    }
-    
-                                    const nuevoComentario = document.createElement("p")
-                                    nuevoComentario.textContent = "Usuario: " + texto;
-    
-                                    const contenedor = document.getElementById("comentarioscss2")
-                                    contenedor.appendChild(nuevoComentario);
-    
-                                    contador2++;
-                                    document.getElementById("contador2").textContent = "Comentários (" + contador + "):";
-    
-                                    input.value = "";
+                    <div id="comentarioscss2">
+                        <div id="comentarios-p1">
+                            <h4 id="contador2">Comentários (0):</h4>
+                        </div>
+
+                        <script>
+                            let contador2 = 0
+                            function agregarComentario2() {
+                                const input = document.getElementById("input-comentario2");
+                                const texto = input.value;
+
+                                if (texto === "") {
+                                    return;
                                 }
-                            </script>
-                        </div>
-    
-                        <div id="comentariosjs2">
-                            <input type="text" id="input-comentario2" placeholder="Escreva um comentário">
-                            <button onclick="agregarComentario2()">Enviar</button>
+
+                                const nuevoComentario = document.createElement("p")
+                                nuevoComentario.textContent = "Usuario: " + texto;
+
+                                const contenedor = document.getElementById("comentarioscss2")
+                                contenedor.appendChild(nuevoComentario);
+
+                                contador2++;
+                                document.getElementById("contador2").textContent = "Comentários (" + contador2 + "):";
+
+                                input.value = "";
+                            }
+                        </script>
+                    </div>
+
+                    <div id="comentariosjs2">
+                        <input type="text" id="input-comentario2" placeholder="Escreva um comentário">
+                        <button onclick="agregarComentario2()">Enviar</button>
+                    </div>
+
+                    <div id="post3">
+
+                        <div id="post3img">
+                            <img src="imagens/post3.png">
                         </div>
 
-                        <div id="post3">
+                        <div id="post3text">
+                            <h3>Bedrock vs java: Qual é melhor?</h3>
+                            <p>“Bedrock vs Java” é um dos debates mais clássicos da comunidade de Minecraft. A versão
+                                Java, exclusiva para PC, é conhecida pela maior liberdade de mods, servidores
+                                personalizados e uma comunidade mais voltada para jogadores avançados. Já a versão
+                                Bedrock, disponível em consoles, mobile e Windows, se destaca pela melhor performance,
+                                otimização e possibilidade de jogar com amigos em diferentes plataformas (crossplay).
+                                Enquanto muitos preferem o Java pela flexibilidade e conteúdo criado pela comunidade,
+                                outros escolhem o Bedrock pela praticidade e acessibilidade. No fim, a melhor versão
+                                depende do estilo de jogo de cada pessoa.</p><br>
+                        </div>
+                    </div>
 
-                            <div id="post3img">
-                                <img src="imagens/post3.png">
-                            </div>
-    
-                            <div id="post3text">
-                                <h3>Bedrock vs java: Qual é melhor?</h3>
-                                <p>“Bedrock vs Java” é um dos debates mais clássicos da comunidade de Minecraft. A versão Java, exclusiva para PC, é conhecida pela maior liberdade de mods, servidores personalizados e uma comunidade mais voltada para jogadores avançados. Já a versão Bedrock, disponível em consoles, mobile e Windows, se destaca pela melhor performance, otimização e possibilidade de jogar com amigos em diferentes plataformas (crossplay). Enquanto muitos preferem o Java pela flexibilidade e conteúdo criado pela comunidade, outros escolhem o Bedrock pela praticidade e acessibilidade. No fim, a melhor versão depende do estilo de jogo de cada pessoa.</p><br>
-                            </div>
+                    <div id="comentarioscss3">
+                        <div id="comentarios-p1">
+                            <h4 id="contador3">Comentários (0):</h4>
                         </div>
 
-                        <div id="comentarioscss3">
-                            <div id="comentarios-p1">
-                              <h4 id="contador3">Comentários (0):</h4>
-                            </div>                     
-                        
-                            <script>
-                                let contador3 = 0
-                                function agregarComentario3(){
-                                    const input = document.getElementById("input-comentario3");
-                                    const texto = input.value;
-    
-                                    if (texto===""){
-                                        return;
-                                    }
-    
-                                    const nuevoComentario = document.createElement("p")
-                                    nuevoComentario.textContent = "Usuario: " + texto;
-    
-                                    const contenedor = document.getElementById("comentarioscss3")
-                                    contenedor.appendChild(nuevoComentario);
-    
-                                    contador3++;
-                                    document.getElementById("contador3").textContent = "Comentários (" + contador + "):";
-    
-                                    input.value = "";
+                        <script>
+                            let contador3 = 0
+                            function agregarComentario3() {
+                                const input = document.getElementById("input-comentario3");
+                                const texto = input.value;
+
+                                if (texto === "") {
+                                    return;
                                 }
-                            </script>
-                        </div>
-    
-                        <div id="comentariosjs3">
-                            <input type="text" id="input-comentario3" placeholder="Escreva um comentário">
-                            <button onclick="agregarComentario3()">Enviar</button>
+
+                                const nuevoComentario = document.createElement("p")
+                                nuevoComentario.textContent = "Usuario: " + texto;
+
+                                const contenedor = document.getElementById("comentarioscss3")
+                                contenedor.appendChild(nuevoComentario);
+
+                                contador3++;
+                                document.getElementById("contador3").textContent = "Comentários (" + contador3 + "):";
+
+                                input.value = "";
+                            }
+                        </script>
+                    </div>
+
+                    <div id="comentariosjs3">
+                        <input type="text" id="input-comentario3" placeholder="Escreva um comentário">
+                        <button onclick="agregarComentario3()">Enviar</button>
+                    </div>
+
+                    <div id="post4">
+
+                        <div id="post4img">
+                            <img src="imagens/post4.jpg">
                         </div>
 
-                </div>   
+                        <div id="post4text">
+                            <h3>Fortnite está perdendo popularidade?</h3>
+                            <p>“Fortnite está perdendo popularidade?” é uma dúvida comum entre jogadores mais antigos.
+                                Embora o jogo já não tenha o mesmo impacto viral de seus primeiros anos, ele continua
+                                sendo extremamente relevante, com eventos constantes, colaborações e atualizações
+                                frequentes. Para muitos, a sensação de queda vem mais do cansaço pessoal do que de uma
+                                diminuição real da comunidade.</p><br>
+                        </div>
+                    </div>
+
+                    <div id="comentarioscss4">
+                        <div id="comentarios-p1">
+                            <h4 id="contador4">Comentários (0):</h4>
+                        </div>
+
+                        <script>
+                            let contador4 = 0
+                            function agregarComentario4() {
+                                const input = document.getElementById("input-comentario4");
+                                const texto = input.value;
+
+                                if (texto === "") {
+                                    return;
+                                }
+
+                                const nuevoComentario = document.createElement("p")
+                                nuevoComentario.textContent = "Usuario: " + texto;
+
+                                const contenedor = document.getElementById("comentarioscss4")
+                                contenedor.appendChild(nuevoComentario);
+
+                                contador4++;
+                                document.getElementById("contador4").textContent = "Comentários (" + contador4 + "):";
+
+                                input.value = "";
+                            }
+
+                        </script>
+                    </div>
+
+                    <div id="comentariosjs4">
+                        <input type="text" id="input-comentario4" placeholder="Escreva um comentário">
+                        <button onclick="agregarComentario4()">Enviar</button>
+                    </div>
+                    <div id="post5">
+
+                        <div id="post5img">
+                            <img src="imagens/post5.jpg">
+                        </div>
+
+                        <div id="post5text">
+                            <h3>Construção vs Zero Build: qual é melhor?</h3>
+                            <p>O debate entre construção e Zero Build em Fortnite divide a comunidade. O modo clássico
+                                exige
+                                habilidade mecânica e rapidez, sendo mais competitivo. Já o Zero Build foca na mira e
+                                estratégia, sendo mais acessível para novos jogadores. No final, tudo depende do estilo
+                                de cada
+                                jogador.</p><br>
+                        </div>
+                    </div>
+
+                    <div id="comentarioscss5">
+                        <div id="comentarios-p1">
+                            <h4 id="contador5">Comentários (0):</h4>
+                        </div>
+
+                        <script>
+                            let contador5 = 0
+                            function agregarComentario5() {
+                                const input = document.getElementById("input-comentario5");
+                                const texto = input.value;
+
+                                if (texto === "") {
+                                    return;
+                                }
+
+                                const nuevoComentario = document.createElement("p")
+                                nuevoComentario.textContent = "Usuario: " + texto;
+
+                                const contenedor = document.getElementById("comentarioscss5")
+                                contenedor.appendChild(nuevoComentario);
+
+                                contador5++;
+                                document.getElementById("contador5").textContent = "Comentários (" + contador5 + "):";
+
+                                input.value = "";
+                            }
+                        </script>
+
+                        <div id="comentariosjs5">
+                            <input type="text" id="input-comentario5" placeholder="Escreva um comentário">
+                            <button onclick="agregarComentario5()">Enviar</button>
+                        </div>
+                    </div>
+                    <div id="post6">
+
+                        <div id="post6img">
+                            <img src="imagens/post6.jpg">
+                        </div>
+
+                        <div id="post6text">
+                            <h3>Warzone ainda vale a pena?</h3>
+                            <p>“Warzone ainda vale a pena?” é uma pergunta frequente entre jogadores. Apesar das
+                                críticas e da concorrência, o jogo ainda mantém uma base ativa e recebe atualizações
+                                constantes. Para quem gosta de ação intensa, ainda é uma boa opção.</p><br>
+                        </div>
+                    </div>
+
+                    <div id="comentarioscss6">
+                        <div id="comentarios-p1">
+                            <h4 id="contador6">Comentários (0):</h4>
+                        </div>
+
+                        <script>
+                            let contador6 = 0
+                            function agregarComentario6() {
+                                const input = document.getElementById("input-comentario6");
+                                const texto = input.value;
+
+                                if (texto === "") {
+                                    return;
+                                }
+
+                                const nuevoComentario = document.createElement("p")
+                                nuevoComentario.textContent = "Usuario: " + texto;
+
+                                const contenedor = document.getElementById("comentarioscss6")
+                                contenedor.appendChild(nuevoComentario);
+
+                                contador6++;
+                                document.getElementById("contador6").textContent = "Comentários (" + contador6 + "):";
+
+                                input.value = "";
+                            }
+                        </script>
+                    </div>
+
+                    <div id="comentariosjs6">
+                        <input type="text" id="input-comentario6" placeholder="Escreva um comentário">
+                        <button onclick="agregarComentario6()">Enviar</button>
+                    </div>
+
+                    <div id="post7">
+
+                        <div id="post7img">
+                            <img src="imagens/post7.jpg">
+                        </div>
+
+                        <div id="post7text">
+                            <h3>Warzone é muito difícil para iniciantes?</h3>
+                            <p>Muitos jogadores novos sentem dificuldade ao começar em Warzone por causa do alto nível
+                                dos
+                                adversários. O jogo exige boa mira, estratégia e conhecimento do mapa. Apesar disso, com
+                                prática, qualquer jogador pode evoluir e competir melhor.</p><br>
+                        </div>
+                    </div>
+
+                    <div id="comentarioscss7">
+                        <div id="comentarios-p1">
+                            <h4 id="contador7">Comentários (0):</h4>
+                        </div>
+
+                        <script>
+                            let contador7 = 0
+                            function agregarComentario7() {
+                                const input = document.getElementById("input-comentario7");
+                                const texto = input.value;
+
+                                if (texto === "") {
+                                    return;
+                                }
+
+                                const nuevoComentario = document.createElement("p")
+                                nuevoComentario.textContent = "Usuario: " + texto;
+
+                                const contenedor = document.getElementById("comentarioscss7")
+                                contenedor.appendChild(nuevoComentario);
+
+                                contador7++;
+                                document.getElementById("contador7").textContent = "Comentários (" + contador7 + "):";
+
+                                input.value = "";
+                            }
+                        </script>
+                    </div>
+
+                    <div id="comentariosjs7">
+                        <input type="text" id="input-comentario7" placeholder="Escreva um comentário">
+                        <button onclick="agregarComentario7()">Enviar</button>
+                    </div>
+                </div>
 
                 <div id="contenido-right">
                     <p>Crie o seu próprio post!</p>
@@ -195,7 +413,6 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
 
@@ -203,7 +420,7 @@
             <div id="footer-container">
                 <div id="footer-left">
                     <p>© 2026 Foro Gamer - Criado por Valentin Liscano Barcelo<br>
-                    Página criado para fins educativos</p>
+                        Página criado para fins educativos</p>
                 </div>
                 <div id="footer-right">
                     <a href="index.html">Início</a>
@@ -215,4 +432,5 @@
 
     </div>
 </body>
+
 </html>

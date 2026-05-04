@@ -127,21 +127,84 @@ nav{
     border-radius: 15px;
 }
 
-#post1, #post2, #post3 {
-  scroll-margin-top: 80px; /* altura de tu navbar */
+#post1, #post2, #post3, #post4, #post5, #post6, #post7 {
+  scroll-margin-top: 80px;
+}
+
+#minecraft, #fortnite, #warzone{
+    background-color: #333333;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+}
+
+#minecraft h1, #fortnite h1, #warzone h1{
+    font-size: 25px;
+}
+
+#mine, #fort, #warz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
 }
 
 
-#mine{
+#mine img, #fort img, #warz img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+#forpost1, #forpost2, #forpost3, #forpost4, #forpost5, #forpost6, #forpost7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+
+    background-color: #1A1A1A;
+    border-radius: 20px;
+    padding: 10px;
+    width: 180px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+#forpost1:hover, #forpost2:hover, #forpost3:hover, #forpost4:hover, #forpost5:hover, #forpost6:hover, #forpost7:hover{
+    transform: scale(0.9);
+    background-color: rgb(239, 68, 68, 0.9);
+}
+
+#forpost1 a, #forpost2 a, #forpost3 a, #forpost4 a, #forpost5 a, #forpost6 a, #forpost7 a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+#fort {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#mine img{
+#fort img{
     width: 150px;
     height: 150px;
 }
+
+#warz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#warz img{
+    width: 150px;
+    height: 150px;
+}
+
 
 #contenido-right{
     background-color: rgba(26, 26, 26, 0.7);
